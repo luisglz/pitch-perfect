@@ -19,7 +19,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     var recordedAudio: RecordedAudio!
     
     override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated) // improvement made from feedback: the class's super method should be called when y override a function.
+        super.viewWillAppear(animated)
         
         stopButton.hidden = true
         recordButton.enabled = true
