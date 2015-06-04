@@ -59,7 +59,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         } else {
-            println("Recording was not successfull.")
+            println("Recording was not successful.")
             recordButton.enabled = true
             stopButton.hidden = true
         }
