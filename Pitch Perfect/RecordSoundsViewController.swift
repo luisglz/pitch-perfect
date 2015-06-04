@@ -66,6 +66,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender)
+        
         if (segue.identifier == "stopRecording"){
             let playSoundsVC: PlaySoundsViewController = segue.destinationViewController as!
                 PlaySoundsViewController
